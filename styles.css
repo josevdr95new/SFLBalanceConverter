@@ -1,0 +1,95 @@
+/* Pixel Art Style Compacto */
+@font-face {
+  font-family: 'Pixel';
+  /* src: url('https://sunflower-land.com/fonts/pixel.ttf') format('truetype');*/
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.pixel-text {
+  font-family: 'Pixel', monospace;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #5a3d2b;
+}
+
+.balance-balloon {
+  display: none;
+  position: absolute;
+  background: #f8f1e0;
+  border: 3px solid #8b5a2b;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  width: 220px;
+  min-height: 70px;
+  z-index: 9999;
+  transform: translateZ(0);
+  pointer-events: none;
+  padding: 8px 10px;
+}
+
+.balloon-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 70px;
+}
+
+.pixel-spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #8b5a2b;
+  border-top-color: transparent;
+  image-rendering: pixelated;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.original-balance {
+  color: #5a3d2b;
+  font-weight: bold;
+  text-align: center;
+}
+
+.usdt-conversion {
+  color: #4a7c20;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.price-info, .error-info {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.error-info {
+  color: #8b2e2e;
+}
+
+.loading-text {
+  color: #8b5a2b;
+}
+
+.balance-text:not(.mt-0.5) {
+  cursor: pointer;
+  position: relative;
+}

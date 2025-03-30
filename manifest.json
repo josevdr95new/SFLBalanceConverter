@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SFL Balance Converter",
+  "version": "1.0",
+  "description": "SFL Balance Converter (josevdr95)",
+  "host_permissions": [
+    "https://api.coingecko.com/*",
+    "https://sunflower-land.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["fonts/*"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "128": "icon.png"
+  }
+}
