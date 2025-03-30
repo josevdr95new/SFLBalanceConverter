@@ -8,7 +8,7 @@
     "https://sunflower-land.com/*"
   ],
   "content_scripts": [{
-    "matches": ["<all_urls>"],
+    "matches": ["*://sunflower-land.com/*"],
     "js": ["content.js"],
     "css": ["styles.css"]
   }],
