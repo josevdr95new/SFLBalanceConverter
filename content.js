@@ -25,7 +25,7 @@ function showLoading() {
 // Obtener precio de SFL
 async function fetchSFLPrice() {
   const now = Date.now();
-  if (now - sflPriceCache.lastUpdated < 120000 && sflPriceCache.value > 0) {
+  if (now - sflPriceCache.lastUpdated < 60000 && sflPriceCache.value > 0) {
     return sflPriceCache.value;
   }
 

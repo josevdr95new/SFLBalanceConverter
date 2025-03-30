@@ -14,7 +14,7 @@ This extension shows the real-time USDT value of your SFL tokens when you click 
 
 1. **Interaction**: Click on any element with the `balance-text` class (excluding those with `mt-0.5`) to trigger a popup.  
 2. **Conversion**: The system:  
-   - Fetches the current SFL price in USD from CoinGecko (with a 2-minute cache)  
+   - Fetches the current SFL price in USD from CoinGecko (with a 1-minute cache)  
    - Converts your displayed balance to its USDT equivalent  
 3. **Display**: Shows:  
    - Your original SFL balance  
