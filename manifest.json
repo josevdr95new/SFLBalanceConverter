@@ -14,7 +14,7 @@
   }],
   "web_accessible_resources": [{
     "resources": ["fonts/*"],
-    "matches": ["<all_urls>"]
+    "matches": ["*://sunflower-land.com/*"]
   }],
   "icons": {
     "128": "icon.png"
