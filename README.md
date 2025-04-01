@@ -48,10 +48,5 @@ The popup automatically hides when:
 2. Load the extension in developer mode (Chrome/Edge: `chrome://extensions/`, Firefox: `about:debugging`)  
 3. Open [Sunflower Land](https://sunflower-land.com) - the extension will work automatically!  
 
-## 📄 License  
-
-MIT License. See [LICENSE](LICENSE) for details.  
-
----  
 
 **Note**: This is a fan-made tool and is not officially affiliated with Sunflower Land.
